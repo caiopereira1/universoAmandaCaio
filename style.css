@@ -1,0 +1,217 @@
+@import
+  url(https://fonts.googleapis.com/css?family=VT323);
+:root {
+  --star-color-A: white;
+  --star-color-B: transparent;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "VT323";
+  font-size: 2rem;
+  background: linear-gradient(
+    0deg,
+    rgb(25,25,112),
+    rgb(33,20,0) 30%,
+    rgb(0, 0, 0) 80%
+  );
+}
+
+.lable {
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.slider {
+  display: block;
+}
+
+.circle {
+  position: absolute;
+  /*width: 10px;
+  height: 10px;
+  left: 100px;
+  top: 20px; */
+  background-color: var(--star-color-A);
+  border-radius: 50%;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  /*animation-direction: alternate;*/
+}
+
+.blink_1 {
+  animation-name: blink10;
+}
+
+.blink_2 {
+  animation-name: blink20;
+}
+
+.blink_3 {
+  animation-name: blink30;
+}
+
+.blink_4 {
+  animation-name: blink40;
+}
+
+.blink_5 {
+  animation-name: blink50;
+}
+
+@keyframes blink10 {
+  0%, 100% {
+    background-color: var(--star-color-A);
+  }
+  20% {
+    background-color: var(--star-color-B);
+  }
+}
+
+@keyframes blink20 {
+  0%, 100% {
+    background-color: var(--star-color-B);
+  }
+  40% {
+    background-color: var(--star-color-A);
+  }
+}
+
+@keyframes blink50 {
+  0%, 100% {
+    background-color: var(--star-color-A);
+  }
+  50% {
+    background-color: var(--star-color-B);
+  }
+}
+
+@keyframes blink30 {
+  0%, 100% {
+    background-color: var(--star-color-A);
+  }
+  60% {
+    background-color: var(--star-color-B);
+  }
+}
+
+@keyframes blink40 {
+  0%, 100% {
+    background-color: var(--star-color-B);
+  }
+  80% {
+    background-color: var(--star-color-A);
+  }
+}
+
+.universe-title {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fffbe6; /* dourado suave */
+  text-shadow: 0 2px 8px #000, 0 0 4px #fffbe6;
+}
+
+.universe-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.universe-title p {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  text-shadow: 0 1px 4px #000;
+  margin-top: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #222;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+.modal-content img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.close {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 16px 0 8px 0;
+  position: relative;
+  margin-top: 16px;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fffbe6;
+  opacity: 0.4;
+  transition: opacity 0.2s, transform 0.2s;
+  cursor: pointer;
+  border: 2px solid #fffbe6;
+}
+
+.carousel-dot.active {
+  opacity: 1;
+  background: #ffd700;
+  transform: scale(1.2);
+  border-color: #ffd700;
+}
+
+.nav-btn {
+  background: #222;
+  border: none;
+  color: #ffd700;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #0006;
+}
+.nav-btn:hover {
+  background: #ffd700;
+  color: #222;
+}
