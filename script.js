@@ -126,7 +126,7 @@ const momentos = [
     desc: 'São Roque e um bom vinho 🍷',
   },
   {
-    left: 745, top: 525,
+    left: 1345, top: 525,
     imgs: ['img/socorro2.jpg', 'img/socorro1.jpg', 'img/socorro3.jpg', 'img/socorro4.jpg', 'img/socorro5.jpg'],
     desc: 'Socorro, uma viagem das boas 🛶❤️',
   },
@@ -141,7 +141,7 @@ const momentos = [
     desc: 'Natal com a criançada 🎄🎁',
   },
   {
-    left: 695, top: 445,
+    left: 1415, top: 245,
     imgs: ['img/aquiemcasa2.jpg', 'img/aquiemcasa1.jpg', 'img/aquiemcasa3.jpg'],
     desc: 'Uns dias de paz aqui em casa 🏡❤️',
   },
@@ -156,7 +156,7 @@ const momentos = [
     desc: 'Vários shows nos derem muitas boas memórias 🎶',
   },
   {
-    left: 795, top: 687,
+    left: 1495, top: 687,
     imgs: ['img/diadosnamorados1.jpg', 'img/diadosnamorados2.jpg', 'img/diadosnamorados3.jpg'],
     desc: 'Nosso dia dos namorados 1 💕',
   },
