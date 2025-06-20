@@ -215,3 +215,16 @@ body {
   background: #ffffff;
   color: #222;
 }
+
+.sky {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* permite clicar nas estrelas especiais */
+  z-index: 1;
+}
+.special-star {
+  pointer-events: auto; /* permite clicar nas especiais */
+  z-index: 2;
+}
